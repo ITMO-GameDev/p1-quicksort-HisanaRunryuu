@@ -145,12 +145,14 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sort.h" />
+    <ClInclude Include="exampleQuickSort.h" />
+    <ClInclude Include="oldSort.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Sort.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Sort.cpp" />
+    <ClCompile Include="oldSort.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
