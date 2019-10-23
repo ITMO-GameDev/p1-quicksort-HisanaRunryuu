@@ -29,7 +29,7 @@ void insertion_sort(T *first, T *last, Compare comp) {
 	for (int i = 1; i < length; i++)
 		for (int j = i; j > 0 && !comp(*(first + j - 1), *(first + j)); j--)
 			swap(first + j - 1, first + j);
-};
+}
 
 template <typename T, typename Compare>
 T pivot_point(T *first, T *last, Compare comp) {
@@ -66,4 +66,4 @@ void quicksort(T *first, T *last, Compare comp) {
 		sort(first, first + right, comp);
 	if (length > left) 
 		sort(first + left, last, comp);
-};
+}
